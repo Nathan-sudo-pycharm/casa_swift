@@ -23,3 +23,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## References :
 
 1.  Framer Motion : used to create advanced animations https://www.framer.com/motion/introduction/
+2.  MongoDB : used  as  backend      https://www.mongodb.com/developer/languages/javascript/nextjs-with-mongodb/#getting-started-with-mongodb
