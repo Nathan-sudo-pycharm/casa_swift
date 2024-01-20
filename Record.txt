@@ -1,0 +1,12 @@
+20 Jan 2024
+Nathan Sequeira : 
+    start time : 06:39 PM 
+    learnings: none
+    Work done : Created "components" folder , inside which all UI based files will be placed .Installed Tailwind CSS ,react-icons.
+        Removed starter code , updated App.css file [ according to tailwind css ].
+        Hosted the repository via vercel [ https://casa-swift-g1zr4yqlk-nathan-sudo-pycharm.vercel.app/ ] .
+        Removed all unnecessary content from "Readme.md".   
+
+    Status : Incomplete due to some issues. commits will be pushed in 2 mins.
+    Ended at : 8:12 PM .             - By Nathan Sequeira
+
