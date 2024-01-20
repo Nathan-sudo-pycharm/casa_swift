@@ -1,73 +1,102 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isClick, setisClick] = useState(false);
+  const toggleNavbar = () => {
+    setisClick(!isClick);
+  };
   return (
     <div>
-      <nav className="flex items-center justify-between flex-wrap p-6">
-        <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-          <img src="images/logo.jpg" className=" flex h-40 mr-2" alt="Logo" />
-        </div>
-        <div className="block lg:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
-          >
-            <svg
-              className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-            <svg
-              className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-            </svg>
-          </button>
-        </div>
-        <div
-          className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${
-            isOpen ? "block" : "hidden"
-          }`}
-        >
-          <div className="text-sm lg:flex-grow">
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              First Link
-            </a>
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              Second Link
-            </a>
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              Third Link
-            </a>
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-            >
-              Fourth Link
-            </a>
-          </div>
-          <div>
-            <button className="inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white">
-              Click Me
-            </button>
-          </div>
-        </div>
-      </nav>
+      return (
+      <nav className={`bg-black ${isOpen ? "md:hidden" : ""}`}>
+        {" "}
+        <div className="max-w-7xl mx-auto px-6 sm:px-4 lg:px-8">
+          {" "}
+          <div className="flex items-center justify-between h-16">
+            {" "}
+            <div className="flex items-center">
+              {" "}
+              <div className="flex-shrink-0">
+                {" "}
+                <a href="/" className="text-white">
+                  {" "}
+                  <img
+                    src="images/logo.jpg"
+                    className="h-24 w-24"
+                    alt="logo"
+                  />{" "}
+                </a>{" "}
+              </div>{" "}
+            </div>{" "}
+            <div className={`${isOpen ? "block" : "hidden"} md:block`}>
+              {" "}
+              <div className="ml-4 flex items-center space-x-4">
+                {" "}
+                <a href="/" className="text-white p-2 hover:underline-offset-8">
+                  {" "}
+                  Home{" "}
+                </a>{" "}
+                <a href="/" className="text-white p-2 hover:underline-offset-8">
+                  {" "}
+                  Home{" "}
+                </a>{" "}
+                <a href="/" className="text-white p-2 hover:underline-offset-8">
+                  {" "}
+                  Home{" "}
+                </a>{" "}
+                <a href="/" className="text-white p-2 hover:underline-offset-8">
+                  {" "}
+                  Home{" "}
+                </a>{" "}
+                <a href="/" className="text-white p-2 hover:underline-offset-8">
+                  {" "}
+                  Home{" "}
+                </a>{" "}
+              </div>{" "}
+            </div>{" "}
+            <div className="md:hidden">
+              {" "}
+              <button
+                className="inline-flex items-center justify-center p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                onClick={toggleNavbar}
+              >
+                {" "}
+                <svg
+                  className={`h-6 w-6 ${isOpen ? "hidden" : "block"}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6, 18L18 6M6 6l12 12"
+                  />{" "}
+                </svg>{" "}
+                <svg
+                  className={`h-6 w-6 ${isOpen ? "block" : "hidden"}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />{" "}
+                </svg>{" "}
+              </button>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </nav>{" "}
+      );
     </div>
   );
 };
