@@ -17,4 +17,9 @@ Nathan Sequeira :
     Report : Tried a lot of tutorials but no desired outcome was achieved. 
     End Time : 2:50AM 
 
-
+21 Jan 2024
+Osheen Dcosta:
+    start time : 15:00 PM
+    Goal : To complete the navigation bar and making it resposive.
+    Report : Navbar finally completed and it is responsive just have to do some color setting.
+    end time : 16:49 PM

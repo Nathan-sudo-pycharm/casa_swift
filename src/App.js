@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className=" px-60 ">
+    <div className=" px-50 ">
       {" "}
       {/* bg-[#F7F2EE] text-[#B69258]  */}
       <NavBar />
