@@ -29,7 +29,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className='bg-[#507FA9]'>
+    <div className='bg-[#FAF0DC]'>
       <div className='mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex item-center justify-between h-16'>
           <div className='flex items-center'>
@@ -39,8 +39,8 @@ const NavBar = () => {
           <div className='hidden md:block'>
             <div className='ml-10 flex items-baseline space-x-4'>
               {navlinks.map((link,index) => (
-                <a key={index} className='text-[#75A4C5] transition-all duration-500 
-                hover:bg-blue-800 hover:text-white px-5 py-5 rounded-md text-md 
+                <a key={index} className='text-[#FAF0DC] transition-all duration-500 
+                hover:bg-[#C19770] hover:text-white px-5 py-5 rounded-md text-md 
                 font-medium' 
                 href={link.link}>
                   {link.title}
@@ -51,8 +51,8 @@ const NavBar = () => {
         {/* hamburger button */}
         <div className='-mr-2 flex md:hidden'>
           <button type='button' onClick={handleMenu} className='inline-flex 
-          item-center justify-center px-5 py-6 rounded-md text-[#CADBE7] 
-          hover:text-white'>
+          item-center justify-center px-5 py-6 rounded-md text-[#C19770] 
+          hover:text-[#A67A5B]'>
             <span className='sr-only'>Open Main Menu</span>
             {open == true ? <FaTimes /> : <FaBars />}
           </button>
@@ -64,7 +64,7 @@ const NavBar = () => {
         <div className='md:hidden'>
           <div className='ox-2 pt-2 pb-3 space-y-1 sm:px-3'>
             {navlinks.map((link,index) => (
-            <a key={index} className='text-[#CADBE7] hover:bg-gray-700 
+            <a key={index} className='text-[#C19770] hover:bg-[#A67A5B] 
             hover:text-white block px-3 py-2 rounded-md text-base 
             font-medium' 
             href={link.link}
