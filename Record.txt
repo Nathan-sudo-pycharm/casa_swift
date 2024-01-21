@@ -22,6 +22,6 @@ Osheen Dcosta:
     start time : 15:00 PM
     Goal : To complete the navigation bar and making it resposive.
     Work done : Created a new file "App.jsx" in "src" folder and did all the necssary commands for navbar in that file. Logo is pending to be 
-                updated and some color setting need to be done.
+                updated.
     Report : Navbar finally completed and it is responsive.
     end time : 16:49 PM
