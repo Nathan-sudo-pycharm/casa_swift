@@ -17,4 +17,19 @@ Nathan Sequeira :
     Report : Tried a lot of tutorials but no desired outcome was achieved. 
     End Time : 2:50AM 
 
+21 Jan 2024
+Osheen Dcosta:
+    start time : 15:00 PM
+    Goal : To complete the navigation bar and making it resposive.
+    Work done : Created a new file "App.jsx" in "src" folder and did all the necssary commands for navbar in that file. Logo is pending to be 
+                updated.
+    Report : Navbar finally completed and it is responsive.
+    end time : 16:49 PM
 
+21 Jan 2024
+Nathan Sequeira:
+    start time : 5:15 PM
+    Goal : Testing out designs , collecting images etc
+    Work done : moified the NavBar with regard to styling . Added a button at the center of the navbar .
+    Report : Goals accomplished . Routing is remianing but will be completed in the further stages.
+    end time : 6:49 PM
