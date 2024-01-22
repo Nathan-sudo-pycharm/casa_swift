@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const osheen = () => {
+const Osheen = () => {
   return (
-    <div>osheen</div>
-  )
-}
+    <div>
+      <div class="size-40  bg-blue-500">size-40</div>
+    </div>
+  );
+};
 
-export default osheen;
+export default Osheen;
