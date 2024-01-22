@@ -35,11 +35,12 @@ const NavBar = () => {
           <div className="flex items-center">
             <img src="images/logo.jpg" alt="logo" className="h-20" />
           </div>
-          <div className="text-center">
+         {/*  Button      
+         <div className="text-center">
             <button className="bg-[#C19770] rounded-lg hover:bg-[#A67A5B] text-white font-bold py-2 px-4  focus:outline-none focus:shadow-outline">
               Explore Homes
             </button>
-          </div>
+          </div> */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navlinks.map((link, index) => (
