@@ -29,13 +29,13 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-opacity-50">
+    <div className="bg-opacity-50 bg-pink-400">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <img src="images/logo.jpg" alt="logo" className="h-20" />
           </div>
-         {/*  Button      
+          {/*  Button      
          <div className="text-center">
             <button className="bg-[#C19770] rounded-lg hover:bg-[#A67A5B] text-white font-bold py-2 px-4  focus:outline-none focus:shadow-outline">
               Explore Homes
